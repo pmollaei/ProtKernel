@@ -15,7 +15,8 @@ Here are the necessary information to reproduce the results in the paper titled:
 4- We should now generage the reference protein. Keep in mind that the start residue index in both simulation trajectories and the reference protein should be the same. For example, if you remove the first residue at begining of the sequences in the trajectories, the residue IDs start at 2. This should be compatible with the reference protein. That is why you may use the same starting residues as they are in the original structure (i.e. in "Chignolin.pdb"), or replace them with random residues. Later, you will remove them and the residue IDs will start at the same index as it is in the trajectories. In some cases, after generating the protein in VMD, extra elements may be added to the protein ("Generated_Chignolin_VMD.pdb"), make sure to remove them 
 <br /> ("Generated_Chignolin_RemovedExtra.pdb").
 
-5- To order atom types in .pdb files, load both reference protein and cleaned simulations files in PyMOL and re-save them ("Generated_Chignolin_ExtraRemoved_OrderedAtoms.pdb", "Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb")
+5- To order atom types in .pdb files, load both reference protein and cleaned simulations files in PyMOL and re-save them.
+<br /> ("Generated_Chignolin_ExtraRemoved_OrderedAtoms.pdb", "Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb")
 
 6- If the residue indices in the cleaned trajectories starts from 2 or higher, now you can remove the extra ones in the generated structure (you can do it using VMD or simply delete them in the text version of .pdb file)
 
@@ -48,12 +49,12 @@ Load it in VMD, and highlight the origin of space using this command in Tk Conso
 <br /> $sel move $A
 <br /> set I [draw principalaxes $sel]
 <br /> ...
-<br /> Save this ("Reference_structure.pdb)" and use it as the the reference structure in the "Kernel_analysis.py" code for RMSD measurments.
+<br /> Save this ("Chignolin_reference.pdb)". You will use it as the the reference structure in "Kernel_analysis.py" code for RMSD measurments.
 
-9- Align the backbone of simulation trajectoris to this reference protein using VMD
+9- Align backbone of structures in the simulation trajectoris to this reference protein using VMD.
 
-10- Save .pdb format of the aligned trajectories
+10- Save .pdb format of the aligned trajectories.
 
-11- You may use the long trajectory for Kernel or split it to single .pdb files using "single_pdb.py" code
+11- You may use the long trajectory for Kernel or split it to single .pdb files using "single_pdb.py" code.
 
 12- Measure the Kernel values for different lambda values in each trajectory. Display and save the best Kernel result using "Kernel_analysis.py" code.
