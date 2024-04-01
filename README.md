@@ -29,3 +29,19 @@ Load it in VMD, and highlight the origin of space using this command in Tk Conso
 <br /> $gec moveto {0 0 0}
 <br /> $sel moveby [vecscale -1.0 $gec]
 <br /> ...
+
+8- Rotate the protein to align its principal axis to the xyz coordination:
+<br /> ...
+<br /> lappend auto_path /directory/la1.0
+<br /> lappend auto_path /directory/orient
+<br /> package require Orient
+<br /> namespace import Orient::orient
+<br /> set sel [atomselect top "all"]
+<br /> set I [draw principalaxes $sel]
+<br /> set A [orient $sel [lindex $I 2] {0 0 1}]
+<br /> $sel move $A
+<br /> set I [draw principalaxes $sel]
+<br /> set A [orient $sel [lindex $I 1] {0 1 0}]
+<br /> $sel move $A
+<br /> set I [draw principalaxes $sel]
+<br /> ...
