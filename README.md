@@ -17,11 +17,15 @@ In some cases, the VMD may add extra elements at the end of the residue sequence
 6- If the residue indices in the cleaned trajectories starts from 2 or higher, now you can remove the extra ones in the generated structure (you can do it using VMD or simply delete them in the text version of .pdb file)
 
 7- Now, we should place the desired reference protein in an appropriate position. 
-Load it in VMD, and highlight the origin of space using this comemnt: 
+Load it in VMD, and highlight the origin of space using this command in Tk Console or startup.command: 
 <br /> ...
 <br /> draw color red
 <br /> draw sphere { 0 0 0 } resolution 16 radius 1.0
 <br /> ...
-move 
-
-
+<br /> move the geometric center of protein to the origin using this command (ignore error as “invalid command name <current geometric center>”):
+<br /> ...
+<br /> set sel [atomselect top all]
+<br /> set gec [measure center $sel]
+<br /> $gec moveto {0 0 0}
+<br /> $sel moveby [vecscale -1.0 $gec]
+<br /> ...
