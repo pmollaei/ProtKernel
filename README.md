@@ -53,4 +53,4 @@ Load it in VMD, and highlight the origin of space using this command in Tk Conso
 
 11- You may use the long trajectory for Kernel or split it to single .pdb files using "single_pdb.py" code
 
-12- 
+12- Measure the Kernel values for different lambda values in each trajectory. Display and save the best Kernel result using "Kernel_analysis.py" code.
