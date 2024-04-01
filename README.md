@@ -45,7 +45,7 @@ Load it in VMD, and highlight the origin of space using this command in Tk Conso
 <br /> $sel move $A
 <br /> set I [draw principalaxes $sel]
 <br /> ...
-<br /> Save this ("Reference_structure.pdb)" and use it as the the reference structure in the "Kernel_analysis.py" code to measure RMSD
+<br /> Save this ("Reference_structure.pdb)" and use it as the the reference structure in the "Kernel_analysis.py" code for RMSD measurments.
 
 9- Align the backbone of simulation trajectoris to this reference protein using VMD
 
