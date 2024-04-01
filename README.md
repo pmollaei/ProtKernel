@@ -16,4 +16,12 @@ In some cases, the VMD may add extra elements at the end of the residue sequence
 
 6- If the residue indices in the cleaned trajectories starts from 2 or higher, now you can remove the extra ones in the generated structure (you can do it using VMD or simply delete them in the text version of .pdb file)
 
-7- Now, we should place the reference protein in an appropriate position. Load it in VMD, 
+7- Now, we should place the desired reference protein in an appropriate position. 
+Load it in VMD, and highlight the origin of space using this comemnt: 
+---
+draw color red
+draw sphere { 0 0 0 } resolution 16 radius 1.0
+---
+move 
+
+
