@@ -45,3 +45,9 @@ Load it in VMD, and highlight the origin of space using this command in Tk Conso
 <br /> $sel move $A
 <br /> set I [draw principalaxes $sel]
 <br /> ...
+
+9- Align the backbone of simulation trajectoris to this reference protein using VMD
+
+10- Save .pdb format of the aligned trajectories
+
+11- Use the 
