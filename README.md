@@ -1,5 +1,8 @@
 # ProtKernel
 Here are the necessary information to reproduce the results in the paper titled: ""
+<br /> The preprocessig steps have been described for Chignolin protein step by step. For other proteins only the filename of each step has been mentioned. You can refer to the corresponding step's description for Chignolin protein.
+
+
 
 ** Chignolin **
 ---
