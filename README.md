@@ -13,9 +13,7 @@ Here are the necessary information to reproduce the results in the paper titled:
 <br /> ("Chignolin_resid2to9_samples8and9_10000f.dcd")
 
 4- We should now generage the reference protein. Keep in mind that the start residue index in both simulation trajectories and the reference protein should be the same. For example, if you remove the first residue at begining of the sequences in the trajectories, the residue IDs start at 2. This should be compatible with the reference protein. That is why you may use the same starting residues as they are in the original structure (i.e. in "Chignolin.pdb"), or replace them with random residues. Later, you will remove them and the residue IDs will start at the same index as it is in the trajectories. 
-<br /> In some cases, after generating the protein in VMD, extra elements may be added to the protein
-<br /> ("Generated_Chignolin_VMD.pdb")
-<br /> make sure to remove them 
+<br /> In some cases, after generating the protein in VMD, extra elements may be added to the protein ("Generated_Chignolin_VMD.pdb"), make sure to remove them 
 <br /> ("Generated_Chignolin_ExtraRemoved.pdb").
 
 5- To order atom types in .pdb files, load both reference protein and cleaned simulations files in PyMOL and re-save them ("Generated_Chignolin_ExtraRemoved_OrderedAtoms.pdb", "Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb")
