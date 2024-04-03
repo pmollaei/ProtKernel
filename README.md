@@ -73,4 +73,6 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 
 4- "Generated_Fs_VMD.pdb", "Generated_Fs_RemovedExtra.pdb", "Generated_Fs_ExtraRemoved_OrderedAtoms.pdb", "Fs_#15_resid2to22_OrderedAtoms.pdb.zip"
 
-5- 
+5- "Fs_reference.pdb"
+
+6- 
