@@ -74,3 +74,10 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 5- "Fs_reference.pdb"
 
 6- "Fs_#15_aligned_to_reference.pdb"
+
+
+** Chignolin **
+---
+1- "proteinb.pdb", "proteinb.psf"
+
+2- 
