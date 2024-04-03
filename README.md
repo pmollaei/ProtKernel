@@ -53,13 +53,11 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 <br /> ...
 <br /> Save this ("Chignolin_reference.pdb)". You will use it as the the reference structure in "Kernel_analysis.py" code for RMSD measurments.
 
-6- Align backbone of structures in the simulation trajectoris to this reference protein using VMD.
+6- Align backbone of structures in the simulation trajectoris to this reference protein using VMD. Save the aligned trajectories ("Chignoline_#15_aligned_to_reference.pdb").
 
-7 Save .pdb format of the aligned trajectories.
+7- You may use the long trajectory for Kernel or split it to single .pdb files using "single_pdb.py" code.
 
-8- You may use the long trajectory for Kernel or split it to single .pdb files using "single_pdb.py" code.
-
-9 Measure the Kernel values for different lambda values in each trajectory. Display and save the best Kernel result using "Kernel_analysis.py" code.
+8- Measure the Kernel values for different lambda values in each trajectory. Display and save the best Kernel result using "Kernel_analysis.py" code.
 
 
 
@@ -75,4 +73,4 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 
 5- "Fs_reference.pdb"
 
-6- 
+6- "Fs_#15_aligned_to_reference.pdb"
