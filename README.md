@@ -76,8 +76,8 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 6- "Fs_#15_aligned_to_reference.pdb"
 
 
-** Chignolin **
+** Proteinb **
 ---
 1- "proteinb.pdb", "proteinb.psf"
 
-2- 
+2- "proteinb_resid1to45.pdb"
