@@ -60,3 +60,17 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 8- You may use the long trajectory for Kernel or split it to single .pdb files using "single_pdb.py" code.
 
 9 Measure the Kernel values for different lambda values in each trajectory. Display and save the best Kernel result using "Kernel_analysis.py" code.
+
+
+
+** Fs peptide **
+---
+1- "fspeptide.pdb"
+
+2- "Fs_resid2to22.pdb"
+
+3- "Fs_#15_resid2to22.dcd"
+
+4- "Generated_Fs_VMD.pdb", "Generated_Fs_RemovedExtra.pdb", "Generated_Fs_ExtraRemoved_OrderedAtoms.pdb", "Fs_#15_resid2to22_OrderedAtoms.pdb.zip"
+
+5- 
