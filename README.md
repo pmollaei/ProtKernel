@@ -86,4 +86,4 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 
 4- "Generated_Proteinb_VMD.pdb", "Generated_Proteinb_OrderedAtoms.pdb", "Proteinb_Simulation_resid1to44_OrderedAtoms.pdb.zip"
 
-5- 
+5- "Proteinb_reference.pdb"
