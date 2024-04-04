@@ -81,3 +81,9 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 1- "proteinb.pdb", "proteinb.psf"
 
 2- "proteinb_resid1to45.pdb"
+
+3- "Proteinb_trajectories_resid1to44.dcd"
+
+4- "Generated_Proteinb_VMD.pdb", "Generated_Proteinb_OrderedAtoms.pdb", "Proteinb_Simulation_resid1to44_OrderedAtoms.pdb.zip"
+
+5- 
