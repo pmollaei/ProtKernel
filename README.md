@@ -109,12 +109,12 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 ---
 1- "Homeodomain.psf", "Homeodomain.pdb"
 
-2- "Homeodomain_resid3to54.pdb"
+2- "Homeodomain_resid3to54.pdb", "Homeodomain_Trajectories_resid3to54.dcd"
 
-3- "Homeodomain_Trajectories_resid3to54.dcd"
+3- "Generated_Homeodomain_VMD.pdb", "Generated_Homeodomain_resid3to54.pdb"
 
-4- "Generated_Homeodomain_VMD.pdb", "Generated_Homeodomain_resid3to54.pdb", "Generated_Homeodomain_resid3to54_OrderedAtoms.pdb", "Homeodomain_Trajectories_resid3to54_OrderedAtoms.pdb.zip"
+4- "Generated_Homeodomain_resid3to54_OrderedAtoms.pdb", "Homeodomain_Trajectories_resid3to54_OrderedAtoms.pdb.zip"
 
 5- "Homeodomain_reference.pdb"
 
-6- "Trp_cage_aligned_to_reference.pdb"
+6- "Homeodomain_aligned_to_reference.pdb"
