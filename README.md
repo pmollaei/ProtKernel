@@ -101,4 +101,6 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 
 4- "Generated_Trp_cage_VMD.pdb", "Generated_Trp_cage_RemovedExtra.pdb", "Generated_Trp_cage_ExtraRemoved_OrderedAtoms.pdb", "Trp_cage_Trajectories_resid3to20_OrderedAtoms.pdb.zip"
 
-5- "
+5- "Trp_cage_reference.pdb"
+
+6- "Trp_cage_aligned_to_reference.pdb"
