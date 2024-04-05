@@ -69,7 +69,7 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 
 3- "Fs_#15_resid2to22.dcd"
 
-4- "Generated_Fs_VMD.pdb", "Generated_Fs_RemovedExtra.pdb", "Generated_Fs_ExtraRemoved_OrderedAtoms.pdb", "Fs_#15_resid2to22_OrderedAtoms.pdb.zip"
+4- "Generated_Fs_VMD.pdb", "Generated_Fs_ExtraRemoved.pdb", "Generated_Fs_ExtraRemoved_OrderedAtoms.pdb", "Fs_#15_resid2to22_OrderedAtoms.pdb.zip"
 
 5- "Fs_reference.pdb"
 
@@ -91,12 +91,14 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 6- "Proteinb_aligned_to_reference.pdb"
 
 
-** BBL **
+** Trp-cage **
 ---
-1- "BBL.pdb", "BBL.psf"
+1- "Trp_cage.psf", "Trp_cage.pdb"
 
-2- "BBL_resid3to34.pdb"
+2- "Trp_cage_resid3to20.pdb"
 
-3- "BBL_Trajectories_Resid3to34.dcd"
+3- "Trp_cage_Trajectories_resid3to20.dcd"
 
-4- 
+4- "Generated_Trp_cage_VMD.pdb", "Generated_Trp_cage_RemovedExtra.pdb", "Generated_Trp_cage_ExtraRemoved_OrderedAtoms.pdb", "Trp_cage_Trajectories_resid3to20_OrderedAtoms.pdb.zip"
+
+5- "
