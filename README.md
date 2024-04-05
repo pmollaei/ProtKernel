@@ -89,3 +89,14 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 5- "Proteinb_reference.pdb"
 
 6- "Proteinb_aligned_to_reference.pdb"
+
+
+** BBL **
+---
+1- "BBL.pdb", "BBL.psf"
+
+2- "BBL_resid3to34.pdb"
+
+3- "BBL_Trajectories_Resid3to34.dcd"
+
+4- 
