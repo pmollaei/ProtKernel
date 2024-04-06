@@ -117,7 +117,8 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 
 5- "Homeodomain_reference.pdb"
 
-6- "Homeodomain_aligned_to_reference.pdb"
+6- "Homeodomain_Trajectories_aligned_to_reference.pdb"
+
 
 ** NTL9 **
 ---
