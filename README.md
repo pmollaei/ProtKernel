@@ -68,7 +68,7 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 
 3- "Fs_Trajectories_resid2to22.dcd"
 
-4- "Generated_Fs_VMD.pdb", "Generated_Fs_ExtraRemoved.pdb", "Generated_Fs_ExtraRemoved_OrderedAtoms.pdb", "Fs_#15_resid2to22_OrderedAtoms.pdb.zip"
+4- "Generated_Fs_VMD.pdb", "Generated_Fs_ExtraRemoved.pdb", "Generated_Fs_ExtraRemoved_OrderedAtoms.pdb", "Fs_Trajectories_resid2to22_OrderedAtoms.pdb.zip"
 
 5- "Fs_reference.pdb"
 
