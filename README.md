@@ -60,14 +60,13 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 8- Measure the Kernel values for different lambda values in each trajectory. Display and save the best Kernel result using "Kernel_analysis.py" code.
 
 
-
 ** Fs peptide **
 ---
-1- "fspeptide.pdb"
+1- "Fspeptide.pdb"
 
 2- "Fs_resid2to22.pdb"
 
-3- "Fs_#15_resid2to22.dcd"
+3- "Fs_Trajectories_resid2to22.dcd"
 
 4- "Generated_Fs_VMD.pdb", "Generated_Fs_ExtraRemoved.pdb", "Generated_Fs_ExtraRemoved_OrderedAtoms.pdb", "Fs_#15_resid2to22_OrderedAtoms.pdb.zip"
 
@@ -104,6 +103,7 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 5- "Trp_cage_reference.pdb"
 
 6- "Trp_cage_aligned_to_reference.pdb"
+
 
 ** Homeodomain **
 ---
