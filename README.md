@@ -118,3 +118,18 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 5- "Homeodomain_reference.pdb"
 
 6- "Homeodomain_aligned_to_reference.pdb"
+
+** NTL9 **
+---
+1- "NTL9.pdb"
+
+2- "NTL9_resid2to38.pdb", "NTL9_Trajectories_resid2to38.dcd"
+
+3- "Generated_NTL9_VMD.pdb", "Generated_NTL9_resid2to38.pdb"
+
+4- "Generated_NTL9_resid2to38_OrderedAtoms.pdb", "NTL9_Trajectories_resid2to38_OrderedAtoms.pdb.zip"
+
+5- "Homeodomain_reference.pdb"
+
+6- "Homeodomain_aligned_to_reference.pdb"
+
