@@ -1,5 +1,5 @@
 # ProtKernel
-Here are the necessary files and corresponding descriptions to reproduce the results in the paper titled: ""
+Here are the necessary files and corresponding descriptions to reproduce the results in the paper titled: "Efficient Reaction Coordinate Identification for Proteins Using Representation Learning"
 <br /> The preprocessig steps are described for Chignolin protein step by step. For other proteins only the filename of each step has been provided. You can refer to the corresponding step's description for Chignolin protein to find how they have been generated.
 
 
