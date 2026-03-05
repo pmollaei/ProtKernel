@@ -19,27 +19,21 @@ The same preprocessing procedure used for Chignolin should be applied to these p
 ** Chignolin Dataset Preparation **
 
 Step 1 — Obtain the Protein Structure
-
 Download the protein structure used for molecular dynamics simulations.
-
 Files:
-
 Chignolin.pdb
 Chignolin.psf
+
 Step 2 — Clean the Protein Sequence
-
 Retain only the standard residues and remove all additional elements added to the sequence.
-
 Output file:
-
 Chignolin_resid2to9.pdb
+
 Step 3 — Clean Simulation Trajectories
-
 Load the simulation trajectories into VMD and retain only the cleaned sequence defined in Step 2.
-
 Output file:
-
 Chignolin_resid2to9_samples8and9_10000f.dcd
+
 Step 4 — Generate the Reference Protein Structure
 
 Create a reference structure ensuring that residue indices match those used in the simulation trajectories.
