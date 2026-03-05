@@ -30,43 +30,29 @@ Output file:
 Chignolin_resid2to9.pdb
 
 Step 3 — Clean Simulation Trajectories
-Load the simulation trajectories into VMD and retain only the cleaned sequence defined in Step 2.
+<br /> Load the simulation trajectories into VMD and retain only the cleaned sequence defined in Step 2.
 Output file:
 Chignolin_resid2to9_samples8and9_10000f.dcd
 
 Step 4 — Generate the Reference Protein Structure
-
-Create a reference structure ensuring that residue indices match those used in the simulation trajectories.
-
+<br /> Create a reference structure ensuring that residue indices match those used in the simulation trajectories.
 Important considerations:
-
 If residues are removed at the beginning of the sequence (e.g., starting at residue 2), the reference structure must use the same indexing.
-
 You may either:
-
 keep the same starting residues as in Chignolin.pdb, or
-
 temporarily add random residues and remove them later.
-
 During generation in VMD, extra atoms may appear and should be removed.
-
 Intermediate files:
-
 Generated_Chignolin_VMD.pdb
 Generated_Chignolin_RemovedExtra.pdb
-
 To ensure consistent atom ordering, load both the reference protein and trajectory structures into PyMOL, then resave them.
-
 Final ordered structures:
-
 Generated_Chignolin_ExtraRemoved_OrderedAtoms.pdb
 Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb
-
 If the cleaned trajectories start from residue index ≥2, remove the corresponding extra residues from the generated reference structure.
 
 Step 5 — Position the Reference Structure
-
-Load the structure into VMD and place the protein in a consistent coordinate frame.
+<br /> Load the structure into VMD and place the protein in a consistent coordinate frame.
 
 First, display the origin:
 
