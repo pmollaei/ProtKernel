@@ -3,7 +3,7 @@ Kernel_analysis.py
 
 Input: Folder of single-structure PDBs + reference PDB.
 <br /> Output: Best (λx, λy, λz) and plots (PC1/PC2 colored by RMSD + RMSD trend along PC1 bins).
-<br /> Reproducibility: Controlled by --seed.
+<br /> Reproducibility: Controlled by seed.
 
 ---
 
