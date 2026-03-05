@@ -1,5 +1,3 @@
-ProtKernel
-
 # Pytone code:
 Kernel_analysis.py
 
