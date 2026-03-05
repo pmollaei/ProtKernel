@@ -54,12 +54,10 @@ Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb
 Step 5 — Position the Reference Structure
 <br /> Load the structure into VMD and place the protein in a consistent coordinate frame.
 <br /> First, display the origin:
-
 <br /> -draw color red
 <br /> -draw sphere { 0 0 0 } resolution 16 radius 1.0
 
 Move the geometric center of the protein to the origin:
-
 <br /> -set sel [atomselect top all]
 <br /> -set gec [measure center $sel]
 <br /> -$gec moveto {0 0 0}
@@ -67,7 +65,6 @@ Move the geometric center of the protein to the origin:
 
 Step 6 — Align Principal Axes
 <br /> Align the principal axes of the protein with the Cartesian coordinate system.
-
 <br /> -lappend auto_path /directory/la1.0
 <br /> -lappend auto_path /directory/orient
 <br /> -package require Orient
@@ -87,40 +84,24 @@ Chignolin_reference.pdb
 <br /> This structure is used as the **reference** for RMSD calculations in Kernel_analysis.py.
 
 Step 7 — Align Simulation Trajectories
-
-Align the backbone atoms of the simulation trajectories to the reference structure using VMD.
-
+<br /> Align the backbone atoms of the simulation trajectories to the reference structure using VMD.
 Output:
+<br /> Chignoline_#15_aligned_to_reference.pdb
 
-Chignoline_#15_aligned_to_reference.pdb
 Step 8 — Generate Individual Structures
-
 You may either:
-
-use the full trajectory directly, or
-
-split the trajectory into individual .pdb files using:
-
+<br /> use the full trajectory directly, or
+<br /> split the trajectory into individual .pdb files using:
 single_pdb.py
+
 Step 9 — Kernel Analysis
-
-Compute kernel values across structures and identify the optimal kernel parameters.
-
-Script:
-
+<br /> Compute kernel values across structures and identify the optimal kernel parameters.
+<br /> Script:
 Kernel_analysis.py
 
-This script:
+<br /> This script evaluates kernel values for different λ combinations, performs PCA analysis, identifies the optimal kernel parameters, and visualizes the resulting reaction coordinate.
 
-evaluates kernel values for different λ combinations
-
-performs PCA analysis
-
-identifies the optimal kernel parameters
-
-visualizes the resulting reaction coordinate
-
-Other Protein Systems
+<br />  **Other Protein Systems**
 
 For the following proteins, the same preprocessing pipeline applies.
 Only the filenames corresponding to each step are provided.
