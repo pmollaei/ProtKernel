@@ -96,10 +96,8 @@ single_pdb.py
 
 Step 9 — Kernel Analysis
 <br /> Compute kernel values across structures and identify the optimal kernel parameters.
-<br /> Script:
-Kernel_analysis.py
-
-<br /> This script evaluates kernel values for different λ combinations, performs PCA analysis, identifies the optimal kernel parameters, and visualizes the resulting reaction coordinate.
+<br /> Script: Kernel_analysis.py
+<br /> **This script evaluates kernel values for different λ combinations, performs PCA analysis, identifies the optimal kernel parameters, and visualizes the resulting reaction coordinate.**
 
 <br />  **Other Protein Systems**
 
