@@ -16,7 +16,7 @@ The complete preprocessing workflow is described step-by-step for the Chignolin 
 For the remaining proteins, only the corresponding filenames for each step are provided.
 The same preprocessing procedure used for Chignolin should be applied to these proteins.
 
-** Chignolin Dataset Preparation **
+**Chignolin Dataset Preparation**
 
 Step 1 — Obtain the Protein Structure
 <br /> Download the protein structure used for molecular dynamics simulations.
