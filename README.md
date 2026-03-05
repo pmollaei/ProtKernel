@@ -37,7 +37,7 @@ Chignolin_resid2to9_samples8and9_10000f.dcd
 Step 4 — Generate the Reference Protein Structure
 <br /> Create a reference structure ensuring that residue indices match those used in the simulation trajectories.
 Important considerations:
-If residues are removed at the beginning of the sequence (e.g., starting at residue 2), the reference structure must use the same indexing.
+<br /> If residues are removed at the beginning of the sequence (e.g., starting at residue 2), the reference structure must use the same indexing.
 You may either:
 keep the same starting residues as in Chignolin.pdb, or
 temporarily add random residues and remove them later.
@@ -45,7 +45,7 @@ temporarily add random residues and remove them later.
 Intermediate files:
 Generated_Chignolin_VMD.pdb
 Generated_Chignolin_RemovedExtra.pdb
-To ensure consistent atom ordering, load both the reference protein and trajectory structures into PyMOL, then resave them.
+<br /> To ensure consistent atom ordering, load both the reference protein and trajectory structures into PyMOL, then resave them.
 Final ordered structures:
 Generated_Chignolin_ExtraRemoved_OrderedAtoms.pdb
 Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb
@@ -53,21 +53,20 @@ Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb
 
 Step 5 — Position the Reference Structure
 <br /> Load the structure into VMD and place the protein in a consistent coordinate frame.
-
 First, display the origin:
 
-draw color red
-draw sphere { 0 0 0 } resolution 16 radius 1.0
+<br /> draw color red
+<br /> draw sphere { 0 0 0 } resolution 16 radius 1.0
 
 Move the geometric center of the protein to the origin:
 
-set sel [atomselect top all]
-set gec [measure center $sel]
-$gec moveto {0 0 0}
-$sel moveby [vecscale -1.0 $gec]
-Step 6 — Align Principal Axes
+<br /> set sel [atomselect top all]
+<br /> set gec [measure center $sel]
+<br /> $gec moveto {0 0 0}
+<br /> $sel moveby [vecscale -1.0 $gec]
 
-Align the principal axes of the protein with the Cartesian coordinate system.
+Step 6 — Align Principal Axes
+<br /> Align the principal axes of the protein with the Cartesian coordinate system.
 
 lappend auto_path /directory/la1.0
 lappend auto_path /directory/orient
