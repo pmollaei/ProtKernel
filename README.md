@@ -4,8 +4,8 @@
 Kernel_analysis.py
 
 Input: Folder of single-structure PDBs + reference PDB.
-Output: Best (λx, λy, λz) and plots (PC1/PC2 colored by RMSD + RMSD trend along PC1 bins).
-Reproducibility: Controlled by --seed.
+<br /> Output: Best (λx, λy, λz) and plots (PC1/PC2 colored by RMSD + RMSD trend along PC1 bins).
+<br /> Reproducibility: Controlled by --seed.
 
 **Preparing protein dataset:**
 Here are the necessary files and corresponding descriptions to reproduce the results in the paper titled: "Efficient Reaction Coordinate Identification for Proteins Using Representation Learning"
