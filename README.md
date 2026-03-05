@@ -71,7 +71,7 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 
 
 ** Fs peptide **
----
+
 1- "Fspeptide.pdb"
 
 2- "Fs_resid2to22.pdb"
@@ -86,7 +86,7 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 
 
 ** Proteinb **
----
+
 1- "proteinb.pdb", "proteinb.psf"
 
 2- "proteinb_resid1to45.pdb"
@@ -101,7 +101,7 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 
 
 ** Trp-cage **
----
+
 1- "Trp_cage.psf", "Trp_cage.pdb"
 
 2- "Trp_cage_resid3to20.pdb"
@@ -116,7 +116,7 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 
 
 ** Homeodomain **
----
+
 1- "Homeodomain.psf", "Homeodomain.pdb"
 
 2- "Homeodomain_resid3to54.pdb", "Homeodomain_Trajectories_resid3to54.dcd"
@@ -131,7 +131,7 @@ Here are the necessary files and corresponding descriptions to reproduce the res
 
 
 ** NTL9 **
----
+
 1- "NTL9.pdb"
 
 2- "NTL9_resid2to38.pdb", "NTL9_Trajectories_resid2to38.dcd"
