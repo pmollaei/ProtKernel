@@ -7,7 +7,297 @@ Input: Folder of single-structure PDBs + reference PDB.
 
 ---
 
-# Preparing protein dataset:
+# Protein Dataset Preparation:
+
+This repository contains the datasets and preprocessing steps required to reproduce the results reported in the paper:
+“Efficient Reaction Coordinate Identification for Proteins Using Representation Learning.”
+
+The complete preprocessing workflow is described step-by-step for the Chignolin protein.
+For the remaining proteins, only the corresponding filenames for each step are provided.
+The same preprocessing procedure used for Chignolin should be applied to these proteins.
+
+** Chignolin Dataset Preparation **
+
+Step 1 — Obtain the Protein Structure
+
+Download the protein structure used for molecular dynamics simulations.
+
+Files:
+
+Chignolin.pdb
+Chignolin.psf
+Step 2 — Clean the Protein Sequence
+
+Retain only the standard residues and remove all additional elements added to the sequence.
+
+Output file:
+
+Chignolin_resid2to9.pdb
+Step 3 — Clean Simulation Trajectories
+
+Load the simulation trajectories into VMD and retain only the cleaned sequence defined in Step 2.
+
+Output file:
+
+Chignolin_resid2to9_samples8and9_10000f.dcd
+Step 4 — Generate the Reference Protein Structure
+
+Create a reference structure ensuring that residue indices match those used in the simulation trajectories.
+
+Important considerations:
+
+If residues are removed at the beginning of the sequence (e.g., starting at residue 2), the reference structure must use the same indexing.
+
+You may either:
+
+keep the same starting residues as in Chignolin.pdb, or
+
+temporarily add random residues and remove them later.
+
+During generation in VMD, extra atoms may appear and should be removed.
+
+Intermediate files:
+
+Generated_Chignolin_VMD.pdb
+Generated_Chignolin_RemovedExtra.pdb
+
+To ensure consistent atom ordering, load both the reference protein and trajectory structures into PyMOL, then resave them.
+
+Final ordered structures:
+
+Generated_Chignolin_ExtraRemoved_OrderedAtoms.pdb
+Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb
+
+If the cleaned trajectories start from residue index ≥2, remove the corresponding extra residues from the generated reference structure.
+
+Step 5 — Position the Reference Structure
+
+Load the structure into VMD and place the protein in a consistent coordinate frame.
+
+First, display the origin:
+
+draw color red
+draw sphere { 0 0 0 } resolution 16 radius 1.0
+
+Move the geometric center of the protein to the origin:
+
+set sel [atomselect top all]
+set gec [measure center $sel]
+$gec moveto {0 0 0}
+$sel moveby [vecscale -1.0 $gec]
+Step 6 — Align Principal Axes
+
+Align the principal axes of the protein with the Cartesian coordinate system.
+
+lappend auto_path /directory/la1.0
+lappend auto_path /directory/orient
+
+package require Orient
+namespace import Orient::orient
+
+set sel [atomselect top "all"]
+set I [draw principalaxes $sel]
+
+set A [orient $sel [lindex $I 2] {0 0 1}]
+$sel move $A
+
+set I [draw principalaxes $sel]
+set A [orient $sel [lindex $I 1] {0 1 0}]
+$sel move $A
+
+set I [draw principalaxes $sel]
+
+Save the final reference structure:
+
+Chignolin_reference.pdb
+
+This structure is used as the reference for RMSD calculations in Kernel_analysis.py.
+
+Step 7 — Align Simulation Trajectories
+
+Align the backbone atoms of the simulation trajectories to the reference structure using VMD.
+
+Output:
+
+Chignoline_#15_aligned_to_reference.pdb
+Step 8 — Generate Individual Structures
+
+You may either:
+
+use the full trajectory directly, or
+
+split the trajectory into individual .pdb files using:
+
+single_pdb.py
+Step 9 — Kernel Analysis
+
+Compute kernel values across structures and identify the optimal kernel parameters.
+
+Script:
+
+Kernel_analysis.py
+
+This script:
+
+evaluates kernel values for different λ combinations
+
+performs PCA analysis
+
+identifies the optimal kernel parameters
+
+visualizes the resulting reaction coordinate
+
+Other Protein Systems
+
+For the following proteins, the same preprocessing pipeline applies.
+Only the filenames corresponding to each step are provided.
+
+Fs Peptide
+
+Step 1
+
+Fspeptide.pdb
+
+Step 2
+
+Fs_resid2to22.pdb
+
+Step 3
+
+Fs_Trajectories_resid2to22.dcd
+
+Step 4
+
+Generated_Fs_VMD.pdb
+Generated_Fs_ExtraRemoved.pdb
+Generated_Fs_ExtraRemoved_OrderedAtoms.pdb
+Fs_Trajectories_resid2to22_OrderedAtoms.pdb.zip
+
+Step 5
+
+Fs_reference.pdb
+
+Step 6
+
+Fs_Trajectories_aligned_to_reference.pdb
+Protein B
+
+Step 1
+
+proteinb.pdb
+proteinb.psf
+
+Step 2
+
+proteinb_resid1to45.pdb
+
+Step 3
+
+Proteinb_trajectories_resid1to44.dcd
+
+Step 4
+
+Generated_Proteinb_VMD.pdb
+Generated_Proteinb_OrderedAtoms.pdb
+Proteinb_Simulation_resid1to44_OrderedAtoms.pdb.zip
+
+Step 5
+
+Proteinb_reference.pdb
+
+Step 6
+
+Proteinb_aligned_to_reference.pdb
+Trp-Cage
+
+Step 1
+
+Trp_cage.psf
+Trp_cage.pdb
+
+Step 2
+
+Trp_cage_resid3to20.pdb
+
+Step 3
+
+Trp_cage_Trajectories_resid3to20.dcd
+
+Step 4
+
+Generated_Trp_cage_VMD.pdb
+Generated_Trp_cage_RemovedExtra.pdb
+Generated_Trp_cage_ExtraRemoved_OrderedAtoms.pdb
+Trp_cage_Trajectories_resid3to20_OrderedAtoms.pdb.zip
+
+Step 5
+
+Trp_cage_reference.pdb
+
+Step 6
+
+Trp_cage_aligned_to_reference.pdb
+Homeodomain
+
+Step 1
+
+Homeodomain.psf
+Homeodomain.pdb
+
+Step 2
+
+Homeodomain_resid3to54.pdb
+Homeodomain_Trajectories_resid3to54.dcd
+
+Step 3
+
+Generated_Homeodomain_VMD.pdb
+Generated_Homeodomain_resid3to54.pdb
+
+Step 4
+
+Generated_Homeodomain_resid3to54_OrderedAtoms.pdb
+Homeodomain_Trajectories_resid3to54_OrderedAtoms.pdb.zip
+
+Step 5
+
+Homeodomain_reference.pdb
+
+Step 6
+
+Homeodomain_Trajectories_aligned_to_reference.pdb
+NTL9
+
+Step 1
+
+NTL9.pdb
+
+Step 2
+
+NTL9_resid2to38.pdb
+NTL9_Trajectories_resid2to38.dcd
+
+Step 3
+
+Generated_NTL9_VMD.pdb
+Generated_NTL9_resid2to38.pdb
+
+Step 4
+
+Generated_NTL9_resid2to38_OrderedAtoms.pdb
+NTL9_Trajectories_resid2to38_OrderedAtoms.pdb.zip
+
+Step 5
+
+NTL9_reference.pdb
+
+Step 6
+
+NTL9_Trajectories_aligned_to_reference.pdb
+
+
+
+
 Here are the necessary files and corresponding descriptions to reproduce the results in the paper titled: "Efficient Reaction Coordinate Identification for Proteins Using Representation Learning"
 <br /> The preprocessig steps are described for Chignolin protein step by step. For other proteins only the filename of each step has been provided. You can refer to the corresponding step's description for Chignolin protein to find how they have been generated.
 
