@@ -101,40 +101,30 @@ Step 9 — Kernel Analysis
 
 <br />  **Other Protein Systems**
 
-For the following proteins, the same preprocessing pipeline applies.
-Only the filenames corresponding to each step are provided.
+<br /> For the following proteins, the same preprocessing pipeline applies.
+<br /> Only the filenames corresponding to each step are provided.
 
-Fs Peptide
+**Fs Peptide**
+Step 1: Fspeptide.pdb
 
-Step 1
+Step 2: Fs_resid2to22.pdb
 
-Fspeptide.pdb
+Step 3: Fs_Trajectories_resid2to22.dcd
 
-Step 2
+Step 4:
+<br /> Generated_Fs_VMD.pdb
+<br /> Generated_Fs_ExtraRemoved.pdb
+<br /> Generated_Fs_ExtraRemoved_OrderedAtoms.pdb
+<br /> Fs_Trajectories_resid2to22_OrderedAtoms.pdb.zip
 
-Fs_resid2to22.pdb
+Step 5: Fs_reference.pdb
 
-Step 3
+Step 6: Fs_Trajectories_aligned_to_reference.pdb
 
-Fs_Trajectories_resid2to22.dcd
 
-Step 4
+**Protein B**
 
-Generated_Fs_VMD.pdb
-Generated_Fs_ExtraRemoved.pdb
-Generated_Fs_ExtraRemoved_OrderedAtoms.pdb
-Fs_Trajectories_resid2to22_OrderedAtoms.pdb.zip
-
-Step 5
-
-Fs_reference.pdb
-
-Step 6
-
-Fs_Trajectories_aligned_to_reference.pdb
-Protein B
-
-Step 1
+Step 1:
 
 proteinb.pdb
 proteinb.psf
