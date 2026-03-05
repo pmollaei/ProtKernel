@@ -25,7 +25,7 @@ Chignolin.pdb
 Chignolin.psf
 
 Step 2 — Clean the Protein Sequence
-Retain only the standard residues and remove all additional elements added to the sequence.
+<br /> Retain only the standard residues and remove all additional elements added to the sequence.
 Output file:
 Chignolin_resid2to9.pdb
 
