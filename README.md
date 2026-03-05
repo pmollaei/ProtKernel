@@ -54,10 +54,12 @@ Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb
 Step 5 — Position the Reference Structure
 <br /> Load the structure into VMD and place the protein in a consistent coordinate frame.
 <br /> First, display the origin:
+
 <br /> -draw color red
 <br /> -draw sphere { 0 0 0 } resolution 16 radius 1.0
 
 Move the geometric center of the protein to the origin:
+
 <br /> -set sel [atomselect top all]
 <br /> -set gec [measure center $sel]
 <br /> -$gec moveto {0 0 0}
@@ -70,24 +72,19 @@ Step 6 — Align Principal Axes
 <br /> -lappend auto_path /directory/orient
 <br /> -package require Orient
 <br /> -namespace import Orient::orient
-
-set sel [atomselect top "all"]
-set I [draw principalaxes $sel]
-
-set A [orient $sel [lindex $I 2] {0 0 1}]
-$sel move $A
-
-set I [draw principalaxes $sel]
-set A [orient $sel [lindex $I 1] {0 1 0}]
-$sel move $A
-
-set I [draw principalaxes $sel]
+<br /> -set sel [atomselect top "all"]
+<br /> =set I [draw principalaxes $sel]
+<br /> -set A [orient $sel [lindex $I 2] {0 0 1}]
+<br /> -$sel move $A
+<br /> -set I [draw principalaxes $sel]
+<br /> -set A [orient $sel [lindex $I 1] {0 1 0}]
+<br /> -$sel move $A
+<br /> -set I [draw principalaxes $sel]
 
 Save the final reference structure:
-
 Chignolin_reference.pdb
 
-This structure is used as the reference for RMSD calculations in Kernel_analysis.py.
+<br /> This structure is used as the **reference** for RMSD calculations in Kernel_analysis.py.
 
 Step 7 — Align Simulation Trajectories
 
