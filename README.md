@@ -42,11 +42,11 @@ You may either:
 keep the same starting residues as in Chignolin.pdb, or
 temporarily add random residues and remove them later.
 <br /> During generation in VMD, extra atoms may appear and should be removed.
-Intermediate files:
+<br /> Intermediate files:
 Generated_Chignolin_VMD.pdb
 Generated_Chignolin_RemovedExtra.pdb
 <br /> To ensure consistent atom ordering, load both the reference protein and trajectory structures into PyMOL, then resave them.
-Final ordered structures:
+<br /> Final ordered structures:
 Generated_Chignolin_ExtraRemoved_OrderedAtoms.pdb
 Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb
 <br /> If the cleaned trajectories start from residue index ≥2, remove the corresponding extra residues from the generated reference structure.
@@ -54,16 +54,15 @@ Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb
 Step 5 — Position the Reference Structure
 <br /> Load the structure into VMD and place the protein in a consistent coordinate frame.
 First, display the origin:
-
-<br /> draw color red
-<br /> draw sphere { 0 0 0 } resolution 16 radius 1.0
+<br /> -draw color red
+<br /> -draw sphere { 0 0 0 } resolution 16 radius 1.0
 
 Move the geometric center of the protein to the origin:
 
-<br /> set sel [atomselect top all]
-<br /> set gec [measure center $sel]
-<br /> $gec moveto {0 0 0}
-<br /> $sel moveby [vecscale -1.0 $gec]
+<br /> -set sel [atomselect top all]
+<br /> -set gec [measure center $sel]
+<br /> -$gec moveto {0 0 0}
+<br /> -$sel moveby [vecscale -1.0 $gec]
 
 Step 6 — Align Principal Axes
 <br /> Align the principal axes of the protein with the Cartesian coordinate system.
