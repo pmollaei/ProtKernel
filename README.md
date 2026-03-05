@@ -41,7 +41,7 @@ If residues are removed at the beginning of the sequence (e.g., starting at resi
 You may either:
 keep the same starting residues as in Chignolin.pdb, or
 temporarily add random residues and remove them later.
-During generation in VMD, extra atoms may appear and should be removed.
+<br /> During generation in VMD, extra atoms may appear and should be removed.
 Intermediate files:
 Generated_Chignolin_VMD.pdb
 Generated_Chignolin_RemovedExtra.pdb
@@ -49,7 +49,7 @@ To ensure consistent atom ordering, load both the reference protein and trajecto
 Final ordered structures:
 Generated_Chignolin_ExtraRemoved_OrderedAtoms.pdb
 Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb
-If the cleaned trajectories start from residue index ≥2, remove the corresponding extra residues from the generated reference structure.
+<br /> If the cleaned trajectories start from residue index ≥2, remove the corresponding extra residues from the generated reference structure.
 
 Step 5 — Position the Reference Structure
 <br /> Load the structure into VMD and place the protein in a consistent coordinate frame.
