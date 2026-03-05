@@ -16,7 +16,7 @@ The complete preprocessing workflow is described step-by-step for the Chignolin 
 For the remaining proteins, only the corresponding filenames for each step are provided.
 The same preprocessing procedure used for Chignolin should be applied to these proteins.
 
--- Due to GitHub file size limitations, the larger dataset files can be downloaded here: 🔗 [Dataset Download Link]((https://drive.google.com/drive/folders/1ZcziYZA6mIb86K7xbJWT-sil0tnliPnV?usp=drive_link))
+-- Due to GitHub file size limitations, the larger dataset files can be downloaded here: 🔗 [Dataset Download Link](https://drive.google.com/drive/folders/1ZcziYZA6mIb86K7xbJWT-sil0tnliPnV?usp=drive_link)
 
 **Chignolin Dataset Preparation**
 
