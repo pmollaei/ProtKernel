@@ -53,12 +53,11 @@ Chignolin_resid2to9_samples8and9_10000f_OrderedAtoms.pdb
 
 Step 5 — Position the Reference Structure
 <br /> Load the structure into VMD and place the protein in a consistent coordinate frame.
-First, display the origin:
+<br /> First, display the origin:
 <br /> -draw color red
 <br /> -draw sphere { 0 0 0 } resolution 16 radius 1.0
 
 Move the geometric center of the protein to the origin:
-
 <br /> -set sel [atomselect top all]
 <br /> -set gec [measure center $sel]
 <br /> -$gec moveto {0 0 0}
