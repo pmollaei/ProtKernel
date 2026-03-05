@@ -19,7 +19,7 @@ The same preprocessing procedure used for Chignolin should be applied to these p
 ** Chignolin Dataset Preparation **
 
 Step 1 — Obtain the Protein Structure
-Download the protein structure used for molecular dynamics simulations.
+<br /> Download the protein structure used for molecular dynamics simulations.
 Files:
 Chignolin.pdb
 Chignolin.psf
