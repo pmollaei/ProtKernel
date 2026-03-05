@@ -1,4 +1,13 @@
 # ProtKernel
+
+**Pytone code:**
+Kernel_analysis.py
+
+Input: Folder of single-structure PDBs + reference PDB.
+Output: Best (λx, λy, λz) and plots (PC1/PC2 colored by RMSD + RMSD trend along PC1 bins).
+Reproducibility: Controlled by --seed.
+
+**Preparing protein dataset:**
 Here are the necessary files and corresponding descriptions to reproduce the results in the paper titled: "Efficient Reaction Coordinate Identification for Proteins Using Representation Learning"
 <br /> The preprocessig steps are described for Chignolin protein step by step. For other proteins only the filename of each step has been provided. You can refer to the corresponding step's description for Chignolin protein to find how they have been generated.
 
