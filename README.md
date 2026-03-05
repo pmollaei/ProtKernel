@@ -66,11 +66,10 @@ Move the geometric center of the protein to the origin:
 Step 6 — Align Principal Axes
 <br /> Align the principal axes of the protein with the Cartesian coordinate system.
 
-lappend auto_path /directory/la1.0
-lappend auto_path /directory/orient
-
-package require Orient
-namespace import Orient::orient
+<br /> -lappend auto_path /directory/la1.0
+<br /> -lappend auto_path /directory/orient
+<br /> -package require Orient
+<br /> -namespace import Orient::orient
 
 set sel [atomselect top "all"]
 set I [draw principalaxes $sel]
